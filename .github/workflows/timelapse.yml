@@ -1,8 +1,9 @@
 name: Timelapse
 on:
+  push: {}
   schedule:
-    - cron: '0 1 * * *'
-  workflow_dispatch:
+    - cron: '0 */6 * * *'
+  workflow_dispatch: {}
 jobs:
   timelapse:
     runs-on: ubuntu-20.04

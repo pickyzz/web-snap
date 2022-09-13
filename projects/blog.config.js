@@ -4,5 +4,9 @@ module.exports = /** @type {TimelapseProjectConfig} */ ({
 
     await page.goto('https://pickyzz.dev')
     await capture(page, 'initial')
+    await page.goto('https://pickyzz.dev/about')
+    await capture(page, 'about')
+    await page.goto('https://pickyzz.dev/blog')
+    await capture(page, 'posts')
   },
 })
